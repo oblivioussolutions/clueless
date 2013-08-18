@@ -1,4 +1,5 @@
 package oblivioussolutions.game;
+
 public class Solution {
 	private Card room;
 	private Card weapon;
@@ -10,10 +11,22 @@ public class Solution {
 		this.suspect = aSuspect;
 	}
 
-	public boolean validateAccusation(Accusation aAccusation) {
-		boolean correctRoom = aAccusation.getRoom() == this.room;
-		boolean correctWeapon = aAccusation.getWeapon() == this.weapon;
-		boolean correctSuspect = aAccusation.getSuspect() == this.suspect;
-		return correctRoom && correctWeapon && correctSuspect;
-	}
+//	public boolean validateAccusation(Accusation aAccusation) {
+//		boolean correctRoom = aAccusation.getRoom() == this.room;
+//		boolean correctWeapon = aAccusation.getWeapon() == this.weapon;
+//		boolean correctSuspect = aAccusation.getSuspect() == this.suspect;
+//		return correctRoom && correctWeapon && correctSuspect;
+//	}
+	
+    public Card getRoomCard() {
+        return room;
+    }
+    
+    public Card getWeaponCard(){
+        return weapon;
+    }
+    
+    public Card getSuspect(){
+        return suspect;
+    }
 }
